@@ -1,0 +1,22 @@
+.kotyatki {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.ko-header {
+  border-bottom: 0.5px solid white;
+  height: 8vh;
+}
+
+.logo {
+  height: 24vh;
+  margin: 1vh;
+}
+
+video {
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  background: #000;
+}

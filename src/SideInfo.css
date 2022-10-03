@@ -1,0 +1,50 @@
+.side-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    text-align: left;
+    padding: 20px;
+
+    transition: all 1s ease-in-out;
+}
+
+.side-info h3 {
+    text-transform: uppercase;
+}
+
+.side-info ul {
+    margin-left: 0;
+    padding-right: 0;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.side-info li {
+    list-style: none;
+    margin-left: -40px;
+    vertical-align: middle;
+}
+.side-info li::before {
+    content: '';
+    display: inline-block;
+    background-image: url("./kitty-icon.svg");
+    height: 12px;
+    width: 12px;
+    margin-right: 6px;
+    margin-left: 3px;
+}
+
+.info-icon {
+    height: 20px;
+    position: relative;
+    margin: 0;
+}
+
+.open {
+    width: 200px;
+    max-width: 90vw;
+
+    background-color: rgba(20, 20, 20, 0.7);
+    min-height: 100vh;
+}

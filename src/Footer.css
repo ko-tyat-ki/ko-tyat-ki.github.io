@@ -1,0 +1,11 @@
+footer {
+    height: 3vh;
+    position: absolute;
+    bottom: 1;
+    width: 100vw;
+}
+
+.media-icon {
+    height: 2.8vh;
+    margin: 5px;
+}

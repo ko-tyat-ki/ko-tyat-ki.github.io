@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ko-tyat-ki/static/css/main.8112a096.css",
+    "main.js": "/ko-tyat-ki/static/js/main.14d2a964.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ko-tyat-ki/static/js/787.28cb0dcd.chunk.js",
+    "static/media/576p.mp4": "/ko-tyat-ki/static/media/576p.3de1c336c99249b0a0f1.mp4",
+    "static/media/koti-logo.svg": "/ko-tyat-ki/static/media/koti-logo.47295e82bf57fcad9e4ad625eeb4998f.svg",
+    "static/media/insta.svg": "/ko-tyat-ki/static/media/insta.f10e78664796b71020bd2443345eb4b6.svg",
+    "static/media/kitty-icon.svg": "/ko-tyat-ki/static/media/kitty-icon.127bcc0af5d44ca33caf2ddf03067dd8.svg",
+    "static/media/github.svg": "/ko-tyat-ki/static/media/github.48f62523d5e56357e0a658639fb1876b.svg",
+    "static/media/close.svg": "/ko-tyat-ki/static/media/close.b72fffc2a109cb7ee3974545b90c8434.svg",
+    "index.html": "/ko-tyat-ki/index.html",
+    "main.8112a096.css.map": "/ko-tyat-ki/static/css/main.8112a096.css.map",
+    "main.14d2a964.js.map": "/ko-tyat-ki/static/js/main.14d2a964.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ko-tyat-ki/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8112a096.css",
+    "static/js/main.14d2a964.js"
+  ]
+}

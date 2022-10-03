@@ -1,0 +1,16 @@
+
+.ko-divider {
+    grid-row: 4;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+hr {
+    grid-column: 2;
+    width: 450px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    border-top: 0.6px solid #ACAE0A;
+}

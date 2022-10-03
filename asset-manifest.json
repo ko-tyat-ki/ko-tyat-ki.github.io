@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.a02955a2.css",
-    "main.js": "/static/js/main.e483e5e0.js",
+    "main.css": "/static/css/main.c7032634.css",
+    "main.js": "/static/js/main.3a4d3619.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/576p.mp4": "/static/media/576p.3de1c336c99249b0a0f1.mp4",
-    "static/media/koti-logo.svg": "/static/media/koti-logo.47295e82bf57fcad9e4ad625eeb4998f.svg",
+    "static/media/koti-logo-lit.svg": "/static/media/koti-logo-lit.ee4ae8b0b74781ff7a3c.svg",
+    "static/media/koti-logo.svg": "/static/media/koti-logo.47295e82bf57fcad9e4a.svg",
     "static/media/insta.svg": "/static/media/insta.f10e78664796b71020bd2443345eb4b6.svg",
     "static/media/kitty-icon.svg": "/static/media/kitty-icon.127bcc0af5d44ca33caf2ddf03067dd8.svg",
     "static/media/github.svg": "/static/media/github.48f62523d5e56357e0a658639fb1876b.svg",
     "static/media/close.svg": "/static/media/close.b72fffc2a109cb7ee3974545b90c8434.svg",
     "index.html": "/index.html",
-    "main.a02955a2.css.map": "/static/css/main.a02955a2.css.map",
-    "main.e483e5e0.js.map": "/static/js/main.e483e5e0.js.map",
+    "main.c7032634.css.map": "/static/css/main.c7032634.css.map",
+    "main.3a4d3619.js.map": "/static/js/main.3a4d3619.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a02955a2.css",
-    "static/js/main.e483e5e0.js"
+    "static/css/main.c7032634.css",
+    "static/js/main.3a4d3619.js"
   ]
 }

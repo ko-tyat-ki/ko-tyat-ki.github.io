@@ -5,18 +5,49 @@
 }
 
 .ko-header {
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid yellow;
   height: 8vh;
+}
+
+h1 {
+  font-size: 36px;
 }
 
 .logo {
   height: 24vh;
   margin: 1vh;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 24vh;
 }
 
 video {
   position: relative;
-  min-width: 100%;
-  width: 100%;
   background: #000;
+  min-width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: kiti-logo-lit infinite 2.5s linear;
+  }
+}
+
+@keyframes kiti-logo-lit {
+  from {
+    background-image: url("./koti-logo-lit.svg");
+  }
+  to {
+    background-image: url("./koti-logo.svg");
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  video {
+    max-height: 50vh;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
 }

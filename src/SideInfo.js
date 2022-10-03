@@ -27,7 +27,9 @@ function SideInfo() {
     "Ilya Batii",
     "Nik Nightingale",
     "Oleg Gergel",
-    "PARANORMA"
+    "PARANORMA",
+    "MoonCows",
+    "Milo Bird"
   ]
 
   return (
@@ -45,8 +47,8 @@ function SideInfo() {
       
       {isOpen && 
         <section className="text">
-          <h3>Who are we?</h3>
-          <p>We are a London-based techno-art collective exploring perception, inception &#38; conception. We've successfully built art installations at regional BM events</p>
+          <h3>who are we?</h3>
+          <p>we are a London-based techno-art collective exploring perception, inception &#38; conception. We've successfully built art installations at regional Burning Man events</p>
           <h3>Team</h3>
           <ul>
             {team.sort((a,b) => a.localeCompare(b)).map((name) => (<li>{name}</li>))}

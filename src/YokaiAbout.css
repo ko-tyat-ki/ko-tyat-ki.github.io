@@ -1,0 +1,54 @@
+.yo-about {
+    /* grid-row: 6; */
+    background: rgba(35, 18, 43, 0.72);
+
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.video-yokai {
+    object-fit: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+p, h3, .fr-widget {
+    color: #E9FCFF;
+    grid-column: 2;
+}
+
+.video-yokai iframe {
+    background: #000;
+
+    border-radius: 10px;
+
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.fr-widget {
+    text-decoration: none;
+    border: 1px solid #E9FCFF;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
+}

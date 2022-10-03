@@ -1,0 +1,29 @@
+.ko-logo {
+    grid-row: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: kiti-logo-lit infinite 2.5s alternate;
+  }
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: 44px auto 44px auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  background-attachment: scroll;
+  animation: kiti-logo-lit infinite 2.5s alternate;
+}
+  
+@keyframes kiti-logo-lit {
+  from {
+    background-image: url("./koti-logo-lit.svg");
+  }
+  to {
+    background-image: url("./koti-logo.svg");
+  }
+}

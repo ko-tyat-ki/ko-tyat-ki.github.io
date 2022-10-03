@@ -1,0 +1,80 @@
+
+.ko-team {
+    grid-row: 7;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+
+    background-color: #23122B;
+
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.team {
+    grid-column: 2;
+
+    padding-left: 36px;
+    padding-right: 36px;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 450px) 1fr;
+
+    color: white;
+}
+
+ul {
+    grid-column: 2;
+
+    margin-left: 0;
+    padding-right: 0;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+    /* text-align: justify; */
+}
+.ko-li {
+    list-style: none;
+    margin-left: -40px;
+    vertical-align: middle;
+}
+
+.ko-li::before {
+    content: '';
+    display: inline-block;
+    background-image: url("./kitty-icon.svg");
+    height: 12px;
+    width: 12px;
+    margin-right: 12px;
+    margin-left: 3px;
+    opacity: 50%;
+}
+
+.info-icon {
+    height: 20px;
+    position: relative;
+    margin: 0;
+    opacity: 88%;
+}
+
+@media only screen and (max-width: 700px) {
+    h3 {
+        grid-column: 2;
+        text-align: center;
+    }
+
+    ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        text-align: center;
+    }
+}

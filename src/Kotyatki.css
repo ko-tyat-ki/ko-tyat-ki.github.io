@@ -1,7 +1,8 @@
 .kotyatki {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: white;
+  margin: 0;
 }
 
 .ko-header {
@@ -15,16 +16,17 @@ h1 {
 
 .logo {
   height: 24vh;
-  margin: 1vh;
+  width: 33vh;
+  margin-bottom: 1vh;
   background-repeat: no-repeat;
   margin: auto;
-  width: 24vh;
 }
 
 video {
   position: relative;
   background: #000;
-  min-width: 100%;
+  width: 100vw;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -43,10 +45,6 @@ video {
 }
 
 @media only screen and (max-width: 800px) {
-  video {
-    max-height: 50vh;
-  }
-
   h1 {
     font-size: 18px;
   }

@@ -45,10 +45,10 @@
 
 .open {
     width: 33vw;
-    min-width: 200px;
 
     background-color: rgba(20, 20, 20, 0.7);
     height: 100vh;
+    margin: 0;
     border-right: 0.5px solid greenyellow;
     overflow-y: auto;
 }

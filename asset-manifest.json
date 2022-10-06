@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c7032634.css",
-    "main.js": "/static/js/main.3a4d3619.js",
+    "main.css": "/static/css/main.52fddaf1.css",
+    "main.js": "/static/js/main.75bad60c.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/576p.mp4": "/static/media/576p.3de1c336c99249b0a0f1.mp4",
     "static/media/koti-logo-lit.svg": "/static/media/koti-logo-lit.ee4ae8b0b74781ff7a3c.svg",
@@ -11,12 +11,12 @@
     "static/media/github.svg": "/static/media/github.48f62523d5e56357e0a658639fb1876b.svg",
     "static/media/close.svg": "/static/media/close.b72fffc2a109cb7ee3974545b90c8434.svg",
     "index.html": "/index.html",
-    "main.c7032634.css.map": "/static/css/main.c7032634.css.map",
-    "main.3a4d3619.js.map": "/static/js/main.3a4d3619.js.map",
+    "main.52fddaf1.css.map": "/static/css/main.52fddaf1.css.map",
+    "main.75bad60c.js.map": "/static/js/main.75bad60c.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7032634.css",
-    "static/js/main.3a4d3619.js"
+    "static/css/main.52fddaf1.css",
+    "static/js/main.75bad60c.js"
   ]
 }

@@ -1,20 +1,42 @@
 footer {
-    height: 3vh;
-    position: absolute;
-    bottom: 1;
+    grid-row: 8;
+
     width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
 }
 
-.AroundFooter {
-    border: 1px solid orange;
-    padding: 10px;
-    padding-bottom: 6px;
-    width: 10vw;
-    margin: auto;
-    margin-top: 16px;
+.ko-footer {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .media-icon {
     height: 2.8vh;
     margin: 5px;
+}
+
+.media {
+    grid-column: 1;
+}
+
+.email {
+    grid-column: 2;
+
+    color: #E9FCFF;
+    font-size: 14px;
+    text-align: end;
+}
+
+.media p {
+    font-size: 14px;
+
+    color: #E9FCFF;
+    text-transform: uppercase;
+}
+
+.media-links {
+    display: flex;
 }

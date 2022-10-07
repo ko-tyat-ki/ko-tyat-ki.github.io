@@ -1,1 +1,15 @@
 
+.ko-video {
+    grid-row: 3;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+video {
+    background: #000;
+
+    grid-column: 2;
+    max-width: 676px;
+}

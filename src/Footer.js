@@ -7,16 +7,19 @@ function Footer() {
     return (
         <footer>
             <div className="AroundFooter">
-                <img 
-                    src={insta}
-                    href="https://www.instagram.com/kotyatki.kollektiv"
-                    className="media-icon" 
-                    alt="insta-icon"></img>
-                <img 
-                    src={github}
-                    href="https://github.com/ko-tyat-ki"
-                    className="media-icon" 
-                    alt="git-icon"></img>
+                <a href="https://www.instagram.com/kotyatkikollektiv">
+                    <img 
+                        src={insta}
+                        className="media-icon" 
+                        alt="insta-icon"/>
+                </a>
+                <a href="https://github.com/ko-tyat-ki">
+                    <img 
+                        src={github}
+                        href="https://github.com/ko-tyat-ki"
+                        className="media-icon" 
+                        alt="git-icon"/>
+                </a>
             </div>
         </footer>
     )

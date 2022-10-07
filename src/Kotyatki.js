@@ -1,7 +1,6 @@
 import SideInfo from './SideInfo';
+import Video from './Video';
 import Footer from './Footer';
-
-import video from './576p.mp4';
 
 import './Kotyatki.css';
 
@@ -12,9 +11,7 @@ function Kotyatki() {
         <h1>Ko-Tyat-Ki Kollektiv.</h1>
       </header>
       <div className="logo"></div>
-      <video autoPlay muted loop playsinline>
-        <source src={video} type="video/mp4"/>
-      </video>
+      <Video></Video>
       <Footer></Footer>
       <SideInfo></SideInfo>
     </div>

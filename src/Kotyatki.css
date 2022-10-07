@@ -1,7 +1,8 @@
 .kotyatki {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: white;
+  margin: 0;
 }
 
 .ko-header {
@@ -11,25 +12,35 @@
 
 h1 {
   font-size: 36px;
+  width: 33vw;
+  margin: auto;
 }
 
 .logo {
   height: 24vh;
-  margin: 1vh;
-  background-repeat: no-repeat;
+  width: 33vh;
+  margin-bottom: 1vh;
   margin: auto;
-  width: 24vh;
+
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center; 
 }
 
 video {
   position: relative;
   background: #000;
-  min-width: 100%;
+  width: 100vw;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
-    animation: kiti-logo-lit infinite 2.5s linear;
+    animation: kiti-logo-lit infinite 2.5s alternate;
   }
 }
 
@@ -43,10 +54,6 @@ video {
 }
 
 @media only screen and (max-width: 800px) {
-  video {
-    max-height: 50vh;
-  }
-
   h1 {
     font-size: 18px;
   }

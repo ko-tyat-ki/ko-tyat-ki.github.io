@@ -12,14 +12,23 @@
 
 h1 {
   font-size: 36px;
+  width: 33vw;
+  margin: auto;
 }
 
 .logo {
   height: 24vh;
   width: 33vh;
   margin-bottom: 1vh;
-  background-repeat: no-repeat;
   margin: auto;
+
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center; 
 }
 
 video {
@@ -31,7 +40,7 @@ video {
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
-    animation: kiti-logo-lit infinite 2.5s linear;
+    animation: kiti-logo-lit infinite 2.5s alternate;
   }
 }
 

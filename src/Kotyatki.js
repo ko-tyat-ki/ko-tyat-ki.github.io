@@ -1,20 +1,26 @@
-import SideInfo from './SideInfo';
+import Header from './Header';
+import Logo from './Logo';
 import Video from './Video';
+import Divider from './Divider';
+import Gallery from './Gallery';
+import About from './About';
+import Team from './Team';
 import Footer from './Footer';
 
 import './Kotyatki.css';
 
 function Kotyatki() {
   return (
-    <div className="kotyatki">
-      <header className="ko-header">
-        <h1>Ko-Tyat-Ki Kollektiv.</h1>
-      </header>
-      <div className="logo"></div>
+    <>
+      <Header></Header>
+      <Logo></Logo>
       <Video></Video>
+      <Divider></Divider>
+      <Gallery></Gallery>
+      <About></About>
+      <Team></Team>
       <Footer></Footer>
-      <SideInfo></SideInfo>
-    </div>
+    </>
   );
 }
 

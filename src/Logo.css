@@ -7,6 +7,25 @@
     animation: kiti-logo-lit infinite 2.5s alternate;
   }
 }
+
+.logo {
+  background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-position: center center; 
+  -moz-background-position: center center; 
+  -webkit-background-position: center center; 
+  -o-background-position: center center; 
+  background-attachment: scroll;
+  -moz-background-attachment: scroll;
+  -webkit-background-attachment: scroll;
+  -o-background-attachment: scroll;
+}
   
 @keyframes kiti-logo-lit {
   from {
@@ -15,14 +34,22 @@
     height: 200px;
     margin: 44px auto 44px auto;
     
-    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+    -o-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
     background-position: center center; 
-    
+    -moz-background-position: center center; 
+    -webkit-background-position: center center; 
+    -o-background-position: center center; 
+    background-attachment: scroll;
+    -moz-background-attachment: scroll;
+    -webkit-background-attachment: scroll;
+    -o-background-attachment: scroll;
   }
   to {
    background-image: url("./koti-logo.svg");
@@ -30,12 +57,21 @@
     height: 200px;
     margin: 44px auto 44px auto;
   
-    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+    -o-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
     background-position: center center; 
+    -moz-background-position: center center; 
+    -webkit-background-position: center center; 
+    -o-background-position: center center; 
+    background-attachment: scroll;
+    -moz-background-attachment: scroll;
+    -webkit-background-attachment: scroll;
+    -o-background-attachment: scroll;
   }
 }

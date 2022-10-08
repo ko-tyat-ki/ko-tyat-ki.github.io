@@ -9,8 +9,8 @@
 hr {
     grid-column: 2;
     width: 450px;
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 
     border-top: 0.6px solid #ACAE0A;
 }

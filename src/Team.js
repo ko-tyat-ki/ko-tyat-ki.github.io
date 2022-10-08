@@ -19,11 +19,12 @@ function Team() {
     "PARANORMA",
     "MoonCows",
     "Milo Bird",
-    "Michal Haber",
+    "Michael Haber",
+    "Bennie",
   ]
 
   return (
-    <section className="ko-team">
+    <section className="ko-team" id="team">
       <div className="team">
         <ul>
           {team.sort((a,b) => a.localeCompare(b)).map((name) => (<li className="ko-li">{name}</li>))}

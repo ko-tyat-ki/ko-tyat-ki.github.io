@@ -4,9 +4,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  background-image: url("./background.png");
+  background-size: cover;
   background-color: black;
 
   display: grid;
   grid-template-rows: min-content auto auto auto auto auto auto auto min-content;
-  width: 100vw;
 }

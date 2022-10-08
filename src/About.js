@@ -2,7 +2,7 @@ import './About.css';
 
 function About() {
   return (
-    <section className="ko-about">
+    <section className="ko-about" id="about">
       <div className="about">
         <p>we are Ko-Tayt-Ki Kollektiv, London-based techno-art collective exploring perception,
           inception &#38; conception. Decentralised. Fluid. We love code, LED & electronic music.

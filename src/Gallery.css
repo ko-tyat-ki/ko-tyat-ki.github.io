@@ -2,7 +2,6 @@
 .ko-gallery {
     grid-row: 5;
 
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
 }

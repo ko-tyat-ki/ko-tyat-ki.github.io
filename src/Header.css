@@ -1,7 +1,6 @@
 header {
     grid-row: 1;
     border-bottom: 4px solid rgba(233, 236, 66, 0.31);
-    width: 100vw;
 
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;

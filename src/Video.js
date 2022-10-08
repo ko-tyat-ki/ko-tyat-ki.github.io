@@ -6,7 +6,7 @@ import './Video.css';
 function Video() {
   return (
     <section className="ko-video">
-      <video autoPlay muted loop playsinline>
+      <video autoPlay muted loop playsinline poster="video.png">
         <source src={video_webm} type="video/webm"/>
         <source src={video_mp4} type="video/mp4"/>
       </video>

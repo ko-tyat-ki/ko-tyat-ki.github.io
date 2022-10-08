@@ -8,7 +8,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <footer>
+        <footer id="contacts">
             <div class="ko-footer">
                 <div className="media">
                     <p>connect with us:</p>

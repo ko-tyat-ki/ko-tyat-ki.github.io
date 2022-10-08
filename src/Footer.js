@@ -3,6 +3,7 @@ import './Footer.css'
 import insta from './insta.svg'
 import github from './github.svg'
 import tele from './tele.svg'
+import emailicon from './emailicon.svg'
 
 import './Footer.css';
 
@@ -29,7 +30,13 @@ function Footer() {
                             <img 
                                 src={tele}
                                 className="media-icon" 
-                                alt="git-icon"/>
+                                alt="tele-icon"/>
+                        </a>
+                        <a href="katerina.loschinina@gmail.com">
+                            <img 
+                                src={emailicon}
+                                className="media-icon email-icon" 
+                                alt="email-icon"/>
                         </a>
                     </div>
                 </div>

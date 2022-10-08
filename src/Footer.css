@@ -12,8 +12,11 @@ footer {
 }
 
 .media-icon {
-    height: 2.8vh;
-    margin: 5px;
+    height: 20px;
+    width: 30px;
+    margin-right: 10px;
+    font-size: 15px;
+    padding: 0;
 }
 
 .media {
@@ -28,6 +31,10 @@ footer {
     text-align: end;
 }
 
+.email-icon {
+    display: none;
+}
+
 .media p {
     font-size: 14px;
 
@@ -37,4 +44,27 @@ footer {
 
 .media-links {
     display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .email-icon {
+        display: block;
+    }
+
+    .ko-footer {
+        grid-template-columns: 1fr;
+    }
+
+    /* .media-links {
+        justify-content: left;
+    }
+
+    .media-icon {
+        max-width: 25%;
+        padding: 0;
+    } */
+
+    .email {
+        display: none;
+    }
 }

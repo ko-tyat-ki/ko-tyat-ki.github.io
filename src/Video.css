@@ -12,4 +12,6 @@ video {
     grid-column: 2;
     max-width: 676px;
     max-width: 100vw;
+
+    border-radius: 10px;
 }

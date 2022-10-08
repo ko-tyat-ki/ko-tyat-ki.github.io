@@ -34,10 +34,13 @@ function Video() {
           <source src={video_mp4} type="video/mp4"/>
         </video>
       ) : (
-        <video controls muted loop autobuffer playsinline poster={poster}>
-          <source src={video_webm} type="video/webm"/>
-          <source src={video_mp4} type="video/mp4"/>
-        </video>
+        <div dangerouslySetInnerHTML={{
+          __html:
+          <video controls loop autobuffer playsinline poster={poster}>
+            <source src={video_webm} type="video/webm"/>
+            <source src={video_mp4} type="video/mp4"/>
+          </video>
+        }} />
       )}
       
     </section>

@@ -1,7 +1,7 @@
 .ko-logo {
     grid-row: 2;
 }
-  
+
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: kiti-logo-lit infinite 2.5s alternate;
@@ -9,69 +9,21 @@
 }
 
 .logo {
+  width: 200px;
+  height: 200px;
+  margin: 44px auto 44px auto;
   background-repeat: no-repeat;
-  -o-background-repeat: no-repeat;
-  -moz-background-repeat: no-repeat;
-  -webkit-background-repeat: no-repeat;
   background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -webkit-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-position: center center; 
-  -moz-background-position: center center; 
-  -webkit-background-position: center center; 
-  -o-background-position: center center; 
+  background-position: center center;
   background-attachment: scroll;
-  -moz-background-attachment: scroll;
-  -webkit-background-attachment: scroll;
-  -o-background-attachment: scroll;
+  animation: kiti-logo-lit infinite 2.5s alternate;
 }
   
 @keyframes kiti-logo-lit {
   from {
     background-image: url("./koti-logo-lit.svg");
-    width: 200px;
-    height: 200px;
-    margin: 44px auto 44px auto;
-    
-    background-repeat: no-repeat;
-    -o-background-repeat: no-repeat;
-    -moz-background-repeat: no-repeat;
-    -webkit-background-repeat: no-repeat;
-    background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-position: center center; 
-    -moz-background-position: center center; 
-    -webkit-background-position: center center; 
-    -o-background-position: center center; 
-    background-attachment: scroll;
-    -moz-background-attachment: scroll;
-    -webkit-background-attachment: scroll;
-    -o-background-attachment: scroll;
   }
   to {
-   background-image: url("./koti-logo.svg");
-    width: 200px;
-    height: 200px;
-    margin: 44px auto 44px auto;
-  
-    background-repeat: no-repeat;
-    -o-background-repeat: no-repeat;
-    -moz-background-repeat: no-repeat;
-    -webkit-background-repeat: no-repeat;
-    background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-position: center center; 
-    -moz-background-position: center center; 
-    -webkit-background-position: center center; 
-    -o-background-position: center center; 
-    background-attachment: scroll;
-    -moz-background-attachment: scroll;
-    -webkit-background-attachment: scroll;
-    -o-background-attachment: scroll;
+    background-image: url("./koti-logo.svg");
   }
 }

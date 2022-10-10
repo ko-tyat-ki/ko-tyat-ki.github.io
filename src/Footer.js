@@ -10,7 +10,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer id="contacts">
-            <div class="ko-footer">
+            <div className="ko-footer">
                 <div className="media">
                     <p>connect with us:</p>
                     <div className="media-links">

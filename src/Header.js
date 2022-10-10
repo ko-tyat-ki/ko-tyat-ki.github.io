@@ -3,7 +3,7 @@ import './Header.css';
 function Header() {
   return (
     <header>
-      <div class="ko-header">
+      <div className="ko-header">
         <h1>Ko-Tyat-Ki Kollektiv.</h1>
         <menu>
           <li><a href="#contacts">contacts</a></li>

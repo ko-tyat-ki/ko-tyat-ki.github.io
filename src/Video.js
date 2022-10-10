@@ -29,14 +29,14 @@ function Video() {
   return (
     <section className="ko-video">
       {windowDimensions > '800px' ? (
-        <video autoPlay muted loop autobuffer playsinline poster={poster}>
+        <video autoPlay muted loop autobuffer playsInline poster={poster}>
           <source src={video_webm} type="video/webm"/>
           <source src={video_mp4} type="video/mp4"/>
         </video>
       ) : (
         <div dangerouslySetInnerHTML={{
           __html:
-          <video controls loop autobuffer playsinline poster={poster}>
+          <video controls loop autobuffer playsInline poster={poster}>
             <source src={video_webm} type="video/webm"/>
             <source src={video_mp4} type="video/mp4"/>
           </video>

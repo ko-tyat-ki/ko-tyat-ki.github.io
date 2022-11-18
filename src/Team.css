@@ -39,7 +39,7 @@ ul {
     -webkit-columns: 2;
     -moz-columns: 2;
 
-    text-align: justify;
+    /* text-align: justify; */
 }
 .ko-li {
     list-style: none;
@@ -63,4 +63,18 @@ ul {
     position: relative;
     margin: 0;
     opacity: 88%;
+}
+
+@media only screen and (max-width: 700px) {
+    h3 {
+        grid-column: 2;
+        text-align: center;
+    }
+
+    ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        text-align: center;
+    }
 }

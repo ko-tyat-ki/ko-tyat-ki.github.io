@@ -53,16 +53,9 @@ footer {
 
     .ko-footer {
         grid-template-columns: 1fr;
+        padding-left: 3em;
+        padding-bottom: 3em;
     }
-
-    /* .media-links {
-        justify-content: left;
-    }
-
-    .media-icon {
-        max-width: 25%;
-        padding: 0;
-    } */
 
     .email {
         display: none;

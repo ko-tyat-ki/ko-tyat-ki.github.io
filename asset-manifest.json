@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f41ef07.css",
-    "main.js": "/static/js/main.3b0d4e82.js",
+    "main.css": "/static/css/main.48886ed2.css",
+    "main.js": "/static/js/main.90d909ea.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/background.png": "/static/media/background.486d4b6fe87ce2dbf6f9.png",
     "static/media/576p.mp4": "/static/media/576p.20bf2f9cd161d9cb6f52.mp4",
-    "static/media/gal-2.png": "/static/media/gal-2.12b97a6e634bd408ed5e.png",
-    "static/media/gal-3.png": "/static/media/gal-3.7339625db4129b795dad.png",
-    "static/media/gal-1.png": "/static/media/gal-1.b0ef09f0bc7e73d278d0.png",
+    "static/media/576p.webm": "/static/media/576p.2c74e2619631dcbd9823.webm",
     "static/media/screen.png": "/static/media/screen.a8b2d17104529859e0ab.png",
     "static/media/koti-logo-lit.svg": "/static/media/koti-logo-lit.f996e8b7988ad767b07c.svg",
     "static/media/koti-logo.svg": "/static/media/koti-logo.12304547fad3cab9e214.svg",
@@ -17,12 +15,12 @@
     "static/media/tele.svg": "/static/media/tele.583447640f2494dbb7ff595885b8aec6.svg",
     "index.html": "/index.html",
     "static/media/emailicon.svg": "/static/media/emailicon.f14ff689fe2d711a6407b279d0437bf6.svg",
-    "main.0f41ef07.css.map": "/static/css/main.0f41ef07.css.map",
-    "main.3b0d4e82.js.map": "/static/js/main.3b0d4e82.js.map",
+    "main.48886ed2.css.map": "/static/css/main.48886ed2.css.map",
+    "main.90d909ea.js.map": "/static/js/main.90d909ea.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f41ef07.css",
-    "static/js/main.3b0d4e82.js"
+    "static/css/main.48886ed2.css",
+    "static/js/main.90d909ea.js"
   ]
 }

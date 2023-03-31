@@ -15,6 +15,14 @@ footer {
     position: relative;
 }
 
+.legal {
+    grid-column: 2;
+
+    font-size: 8px;
+
+    color: #E9FCFF;
+}
+
 .media-icon {
     height: 20px;
     width: 30px;

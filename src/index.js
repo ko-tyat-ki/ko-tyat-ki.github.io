@@ -12,7 +12,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Kotyatki/>}/>
-        <Route exact path="/kotyatki" element={<Yokai/>}/>
+        <Route path="/kotyatki" element={<Yokai/>}/>
       </Routes> 
     </BrowserRouter>
   </React.StrictMode>

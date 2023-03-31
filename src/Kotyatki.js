@@ -6,20 +6,27 @@ import Gallery from './Gallery';
 import About from './About';
 import Team from './Team';
 import Footer from './Footer';
+import Yokai from './Yokai';
 
 import './Kotyatki.css';
 
 function Kotyatki() {
+  const path = window.location.pathname;
+
+  if (path === "/kinkiyokai") {
+    return <Yokai/>
+  }
+
   return (
     <>
-      <Header></Header>
-      <Logo></Logo>
-      <Video></Video>
-      <Divider></Divider>
-      <Gallery></Gallery>
-      <About></About>
-      <Team></Team>
-      <Footer></Footer>
+        <Header/>
+        <Logo/>
+        <Video/>
+        <Divider/>
+        <Gallery/>
+        <About/>
+        <Team/>
+        <Footer/>
     </>
   );
 }

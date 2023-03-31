@@ -1,15 +1,29 @@
 import './YokaiAbout.css';
 
 function YokaiAbout() {
-  const link = "https://www.youtube.com/embed/imKELSX2kw8"
+  const link = "https://www.youtube.com/embed/j1-hFnRSwws"
 
   return (
     <>
-    <section className="yo-about" id="about">
+    <section className="yo-about">
       <div className="about">
-        <p>Help us build an oasis of audio visual tactile pleasure.
+        <h3>An oasis of audio visual tactile pleasure.
           A place to explore the playful connection and curiosity through tension and touch.
-          A tactile multi-sensory interactive sculpture. Gigantic Yokai hidden deep in the playa.</p>
+          A tactile multi-sensory interactive sculpture. Gigantic Yokai hidden deep in the playa.</h3>
+        </div>
+    </section>
+    <section>
+        <div className="video-yokai">
+          <iframe
+            src={link}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube" />
+        </div>
+    </section>
+    <section className="yo-about">
+      <div className="about">
         <p>The Kinky Yokai is a multi-dimensional portal inviting participants to explore
           self-discovery, honesty, and creativity through its multi-sensory features. This tactile,
           interactive sculpture lets attendees delve into the relationship between confinement and
@@ -24,17 +38,7 @@ function YokaiAbout() {
           the lines between realities.
         </p>
       </div>
-      </section>
-      <section>
-        <div className="video-yokai">
-          <iframe
-            src={link}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube" />
-        </div>
-      </section>
+    </section>
     </>
   );
 }

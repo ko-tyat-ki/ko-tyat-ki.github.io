@@ -2,20 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Kotyatki from './Kotyatki';
-import Yokai from './Yokai';
 import reportWebVitals from './reportWebVitals';
-import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Kotyatki/>}/>
-        <Route path="/kotyatki" element={<Yokai/>}/>
-      </Routes> 
-    </BrowserRouter>
-  </React.StrictMode>
+  <Kotyatki/>
 );
 
 // If you want to start measuring performance in your app, pass a function

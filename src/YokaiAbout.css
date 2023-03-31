@@ -1,5 +1,5 @@
-/* .yo-about {
-    grid-row: 6;
+.yo-about {
+    /* grid-row: 6; */
     background: rgba(35, 18, 43, 0.72);
 
     width: 100%;
@@ -10,21 +10,21 @@
     padding-bottom: 72px;
     margin-top: 50px;
     margin-bottom: 50px;
-} */
+}
 
 .video-yokai {
     object-fit: cover;
-    height: 100%;
-    
-    width: 100%;
-
-    /* grid-row: 3; */
 
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
+
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
-p {
+p, h3 {
     color: #E9FCFF;
     grid-column: 2;
 }
@@ -32,16 +32,14 @@ p {
 iframe {
     background: #000;
 
-    display: grid;
+    /* display: grid; */
     grid-column: 2;
 
-    /* max-width: 676px; */
-    height: 400%;
-    /* height: 00%; */
-
     border-radius: 10px;
-}
 
-.video-yokai section {
-    height: 400%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }

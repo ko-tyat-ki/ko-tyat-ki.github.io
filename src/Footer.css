@@ -1,14 +1,18 @@
 footer {
-    grid-row: 8;
+    /* grid-row: 8; */
 
     display: grid;
     grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+
+    position: relative;
 }
 
 .ko-footer {
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    position: relative;
 }
 
 .media-icon {
@@ -21,6 +25,8 @@ footer {
 
 .media {
     grid-column: 1;
+
+    position: relative;
 }
 
 .email {

@@ -42,6 +42,7 @@ function Footer() {
                 </div>
                 <p className="email">katerina.loschinina@gmail.com</p>
             </div>
+            <h6 className="legal">NDINE, Ugne Luna Snieskaite, Artistic creation and alternative entertainment</h6>
         </footer>
     )
 }

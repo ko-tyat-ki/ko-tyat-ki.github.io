@@ -22,18 +22,18 @@
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+
+    max-width: 1200px;
+    margin: auto;
 }
 
-p, h3 {
+p, h3, .fr-widget {
     color: #E9FCFF;
     grid-column: 2;
 }
 
-iframe {
+.video-yokai iframe {
     background: #000;
-
-    /* display: grid; */
-    grid-column: 2;
 
     border-radius: 10px;
 
@@ -42,4 +42,13 @@ iframe {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.fr-widget {
+    text-decoration: none;
+    border: 1px solid #E9FCFF;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px auto 10px auto;
 }

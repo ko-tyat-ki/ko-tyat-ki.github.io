@@ -14,6 +14,11 @@ function Team() {
     "Monica Leonova",
     "Ryan McClure",
     "Eugene Kozlov (WestSteel)",
+    "Luna Snieskaite",
+    "Kirill Burenkov",
+    "Rafik Nizarali",
+    "Amy Bull",
+    "Sam Dixon"
   ]
 
   const specialThanks = [
@@ -26,7 +31,7 @@ function Team() {
     "Ilya Batii",
     "Nik Nightingale",
     "Oleg Gergel",
-    "PARANORMA & Shay Berenstein",
+    "PARANORMA",
     "MoonCows",
     "Bennie",
   ]

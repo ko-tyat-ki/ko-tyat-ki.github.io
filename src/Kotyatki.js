@@ -11,9 +11,9 @@ import Yokai from './Yokai';
 import './Kotyatki.css';
 
 function Kotyatki() {
-  const path = window.location.pathname;
+  const hash = window.location.hash;
 
-  if (path === "/kinkiyokai") {
+  if (hash === "#kinkiyokai") {
     return <Yokai/>
   }
 

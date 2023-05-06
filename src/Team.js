@@ -18,7 +18,8 @@ function Team() {
     "Kirill Burenkov",
     "Rafik Nizarali",
     "Amy Bull",
-    "Sam Dixon"
+    "Sam Dixon",
+    "Matthew Lai"
   ]
 
   const specialThanks = [

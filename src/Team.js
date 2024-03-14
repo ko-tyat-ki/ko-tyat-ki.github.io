@@ -5,24 +5,14 @@ function Team() {
     "Katerina Loschinina",
     "Andrey Novikov",
     "Lucy Onischenko",
-    "Santiago Carbon",
     "Katya Marchenko",
-    "Milo Bird",
-    "Michael Haber",
-    "Ela SIWY",
-    "Ryan McElhone",
-    "Monica Leonova",
-    "Ryan McClure",
-    "Eugene Kozlov (WestSteel)",
     "Luna Snieskaite",
     "Kirill Burenkov",
-    "Rafik Nizarali",
-    "Amy Bull",
-    "Sam Dixon",
-    "Matthew Lai"
+    "Matthew Lai",
   ]
 
   const specialThanks = [
+    "Santiago Carbon",
     "Alex Ostrovsky",
     "Paulo Ricca",
     "Inessa Demidova",
@@ -32,9 +22,16 @@ function Team() {
     "Ilya Batii",
     "Nik Nightingale",
     "Oleg Gergel",
-    "PARANORMA",
     "MoonCows",
     "Bennie",
+    "Eugene Kozlov (WestSteel)",
+    "Milo Bird",
+    "Ela SIWY",
+    "Joe Giacomet",
+    "Petr Balabanov",
+    "Alex Belov",
+    "Amita Goyal",
+    "Shai Yeshanov",
   ]
 
   return (

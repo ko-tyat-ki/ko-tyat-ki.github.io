@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.css'
 
 function HeaderYokai() {
   return (
@@ -10,7 +10,7 @@ function HeaderYokai() {
         </menu>
       </div>    
     </header>
-  );
+  )
 }
 
-export default HeaderYokai;
+export default HeaderYokai

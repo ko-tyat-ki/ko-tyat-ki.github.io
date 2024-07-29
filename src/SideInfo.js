@@ -1,16 +1,16 @@
-import {useState} from 'react';
+import {useState} from 'react'
 
 import kitty from './kitty-icon.svg'
 import close from './close.svg'
 
-import './SideInfo.css';
+import './SideInfo.css'
 
 function SideInfo() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleOpen = () => {
-    setIsOpen(current => !current);
-  };
+    setIsOpen(current => !current)
+  }
 
   const team = [
     "Katerina Loschinina",
@@ -48,7 +48,7 @@ function SideInfo() {
       {isOpen && 
         <section className="text">
           <h3>who are we?</h3>
-          <p>we are a London-based techno-art collective exploring perception, inception &#38; conception. We've successfully built art installations at regional Burning Man events</p>
+          <p>we are a London-based techno-art collective exploring perception, inception &#38 conception. We've successfully built art installations at regional Burning Man events</p>
           <h3>Team</h3>
           <ul>
             {team.sort((a,b) => a.localeCompare(b)).map((name) => (<li>{name}</li>))}
@@ -56,7 +56,7 @@ function SideInfo() {
         </section>
       }
     </div>
-  );
+  )
 }
 
-export default SideInfo;
+export default SideInfo

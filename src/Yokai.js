@@ -1,17 +1,17 @@
-import HeaderYokai from './HeaderYokai';
-import YokaiAbout from './YokaiAbout';
-import Footer from './Footer';
+import HeaderYokai from './HeaderYokai'
+import YokaiAbout from './YokaiAbout'
+import Footer from './Footer'
 
-import './Kotyatki.css';
+import './Kotyatki.css'
 
 function Yokai() {
   return (
     <>
-      <HeaderYokai></HeaderYokai>
-      <YokaiAbout></YokaiAbout>
-      <Footer></Footer>
+      <HeaderYokai/>
+      <YokaiAbout/>
+      <Footer/>
     </>
-  );
+  )
 }
 
-export default Yokai;
+export default Yokai

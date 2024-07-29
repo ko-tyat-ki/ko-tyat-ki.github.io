@@ -1,4 +1,4 @@
-import './Team.css';
+import './Team.css'
 
 function Team() {
   const team = [
@@ -49,7 +49,7 @@ function Team() {
         </ul>
       </div>
     </section>
-  );
+  )
 }
 
-export default Team;
+export default Team

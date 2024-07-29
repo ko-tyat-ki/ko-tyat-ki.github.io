@@ -1,4 +1,4 @@
-import './YokaiAbout.css';
+import './YokaiAbout.css'
 
 function YokaiAbout() {
   const link = "https://www.youtube.com/embed/j1-hFnRSwws"
@@ -10,7 +10,7 @@ function YokaiAbout() {
         <h3>An oasis of audio visual tactile pleasure.
           A place to explore the playful connection and curiosity through tension and touch.
           A tactile multi-sensory interactive sculpture. Gigantic Yokai hidden deep in the playa.</h3>
-          <a class="fr-widget" target="_blank" data-type="pay" href="https://fnd.us/22APs3/pay">Donate</a>
+          <a class="fr-widget" target="_blank" rel="noreferrer" data-type="pay" href="https://fnd.us/22APs3/pay">Donate</a>
       </div>
     </section>
     <section>
@@ -47,4 +47,4 @@ function YokaiAbout() {
   );
 }
 
-export default YokaiAbout;
+export default YokaiAbout

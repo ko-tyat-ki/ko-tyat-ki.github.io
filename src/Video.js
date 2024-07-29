@@ -1,30 +1,30 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
-import video_mp4 from './576p.mp4';
-import video_webm from './576p.webm';
+import video_mp4 from './576p.mp4'
+import video_webm from './576p.webm'
 import poster from './screen.png'
 
-import './Video.css';
+import './Video.css'
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
+  const { innerWidth: width, innerHeight: height } = window
   return {
     width,
     height
-  };
+  }
 }
 
 function Video() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
 
   useEffect(() => {
     function handleResize() {
-      setWindowDimensions(getWindowDimensions());
+      setWindowDimensions(getWindowDimensions())
     }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <section className="ko-video">
@@ -44,7 +44,7 @@ function Video() {
       )}
       
     </section>
-  );
+  )
 }
 
-export default Video;
+export default Video

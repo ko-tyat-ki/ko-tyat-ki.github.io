@@ -1,4 +1,4 @@
-import './Gallery.css';
+import './Gallery.css'
 
 function Gallery() {
   const links = [
@@ -29,4 +29,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default Gallery

@@ -1,4 +1,4 @@
-import './About.css';
+import './About.css'
 
 function About() {
   return (
@@ -14,7 +14,7 @@ function About() {
           and a yearly nano-burn festival</p>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

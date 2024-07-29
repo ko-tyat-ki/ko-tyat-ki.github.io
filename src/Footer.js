@@ -5,7 +5,7 @@ import github from './github.svg'
 import tele from './tele.svg'
 import emailicon from './emailicon.svg'
 
-import './Footer.css';
+import './Footer.css'
 
 function Footer() {
     return (
@@ -47,4 +47,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default Footer

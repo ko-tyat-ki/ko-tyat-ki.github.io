@@ -44,7 +44,7 @@ function YokaiAbout() {
       </div>
     </section>
     </>
-  );
+  )
 }
 
 export default YokaiAbout

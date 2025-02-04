@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="ko-about" id="about">
       <div className="about">
-        <p>we are Ko-Tyat-Ki Kollektiv, London-Amsterdam-Berlin-NY-Tel-Aviv-based techno-art collective exploring perception,
+        <p>we are Ko-Tyat-Ki Kollektiv, London-Amsterdam-Berlin-NY-based techno-art collective exploring perception,
           inception &#38; conception. decentralised. fluid. we love code, LED & electronic music.
           doing multimedia art for purr-purr-purr :3</p>
         <p>we are artists, designers, architects, structural and software engineers.

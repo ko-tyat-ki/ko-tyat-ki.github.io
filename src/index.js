@@ -4,6 +4,11 @@ import './index.css'
 import Kotyatki from './Kotyatki'
 import reportWebVitals from './reportWebVitals'
 
+// Remove all query parameters from the URL
+// to avoid e.g. tracking parameters added by Instagram/Facebook/etc.
+const cleanUrl = window.location.pathname + window.location.hash
+window.history.replaceState({}, '', cleanUrl)
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <Kotyatki/>

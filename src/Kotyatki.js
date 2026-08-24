@@ -7,6 +7,7 @@ import About from './About'
 import Team from './Team'
 import Footer from './Footer'
 import Yokai from './Yokai'
+import Countdown from './Countdown'
 
 import './Kotyatki.css'
 
@@ -15,6 +16,10 @@ function Kotyatki() {
 
   if (hash === "#kinkiyokai") {
     return <Yokai/>
+  }
+
+  if (hash === "#sbwlfrs-cntdwn") {
+    return <Countdown/>
   }
 
   return (

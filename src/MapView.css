@@ -10,7 +10,7 @@
 }
 
 .event-map-frame {
-  width: min(100vw, calc(100dvh * 1.876));
+  width: min(100vw, 187.6dvh);
   aspect-ratio: 2048 / 1092;
   position: relative;
   transform: translate(3%, 6.7%) scale(1.15);
@@ -43,7 +43,7 @@
   position: absolute;
   left: 47.4%;
   top: 44.2%;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
 
   background-image: linear-gradient(
@@ -63,7 +63,7 @@
 
 .paw-step {
   position: absolute;
-  translate: -50% -50%;
+  transform: translate(-50%, -50%) rotate(var(--paw-rotate));
   z-index: 2;
   font-size: clamp(15px, 1.8vw, 30px);
   line-height: 1;
@@ -83,7 +83,7 @@
   position: absolute;
   left: 50%;
   bottom: clamp(14px, 2.5vh, 28px);
-  translate: -50% 0;
+  transform: translateX(-50%);
   z-index: 5;
   width: min(420px, calc(100% - 40px));
   height: 42px;
@@ -118,7 +118,7 @@
 
 @media (max-aspect-ratio: 1 / 1) {
   .event-map-frame {
-    width: calc(100dvh * 1.876);
+    width: 187.6dvh;
     height: 100dvh;
     max-width: none;
     flex: none;

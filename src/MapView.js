@@ -35,7 +35,7 @@ const MapView = () => {
               style={{
                 left: paw.left,
                 top: paw.top,
-                rotate: paw.rotate,
+                '--paw-rotate': paw.rotate,
                 '--paw-index': index,
               }}
             >

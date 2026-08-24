@@ -116,17 +116,25 @@
   }
 }
 
-@media (max-aspect-ratio: 3 / 4) {
+@media (max-aspect-ratio: 1 / 1) {
   .event-map-frame {
-    width: 100vw;
+    width: calc(100dvh * 1.876);
+    height: 100dvh;
+    max-width: none;
+    flex: none;
     transform: translate(3%, 6.7%) scale(1.15);
   }
 
   .event-map-logo {
-    width: clamp(58px, 17vw, 86px);
+    width: clamp(68px, 20vw, 94px);
   }
 
   .paw-step {
-    font-size: clamp(11px, 3.5vw, 18px);
+    font-size: clamp(16px, 4.5vw, 22px);
+  }
+
+  .map-player {
+    bottom: max(14px, env(safe-area-inset-bottom));
+    width: calc(100% - 28px);
   }
 }

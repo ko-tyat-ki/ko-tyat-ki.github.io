@@ -13,6 +13,22 @@
   width: min(100vw, calc(100dvh * 1.876));
   aspect-ratio: 2048 / 1092;
   position: relative;
+  transform: translate(3%, 6.7%) scale(1.15);
+  transform-origin: center;
+}
+
+.event-map-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 40% 58% at 48.5% 58%,
+    transparent 0%,
+    rgba(8, 5, 14, 0.08) 42%,
+    rgba(8, 5, 14, 0.48) 100%
+  );
 }
 
 .event-map-image {
@@ -59,8 +75,8 @@
     saturate(4)
     drop-shadow(0 0 5px rgba(98, 216, 239, 0.9));
   opacity: 0.28;
-  animation: paw-mingle 2.1s steps(1, end) infinite;
-  animation-delay: calc(var(--paw-index) * -0.23s);
+  animation: paw-forward 3.2s steps(1, end) infinite;
+  animation-delay: calc(var(--paw-index) * 0.24s);
 }
 
 .map-player {
@@ -87,15 +103,15 @@
   }
 }
 
-@keyframes paw-mingle {
+@keyframes paw-forward {
   0%,
-  62%,
+  14%,
   100% {
-    opacity: 0.25;
+    opacity: 0.2;
   }
 
-  63%,
-  82% {
+  15%,
+  34% {
     opacity: 1;
   }
 }
@@ -103,6 +119,7 @@
 @media (max-aspect-ratio: 3 / 4) {
   .event-map-frame {
     width: 100vw;
+    transform: translate(3%, 6.7%) scale(1.15);
   }
 
   .event-map-logo {

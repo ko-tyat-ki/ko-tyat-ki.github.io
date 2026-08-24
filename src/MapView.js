@@ -2,13 +2,13 @@ import React from 'react'
 import './MapView.css'
 
 const paws = [
-  { left: '49.4%', top: '81.5%', rotate: '-10deg' },
-  { left: '50.2%', top: '75.8%', rotate: '18deg' },
-  { left: '51.6%', top: '69.6%', rotate: '22deg' },
-  { left: '52.4%', top: '63.2%', rotate: '-8deg' },
-  { left: '52.1%', top: '57.1%', rotate: '-22deg' },
-  { left: '51.1%', top: '52.2%', rotate: '-32deg' },
-  { left: '49.8%', top: '48.1%', rotate: '-48deg' },
+  { left: '49.4%', top: '81.5%', rotate: '8deg' },
+  { left: '50.2%', top: '75.8%', rotate: '12deg' },
+  { left: '51.6%', top: '69.6%', rotate: '8deg' },
+  { left: '52.4%', top: '63.2%', rotate: '-4deg' },
+  { left: '52.1%', top: '57.1%', rotate: '-14deg' },
+  { left: '51.1%', top: '52.2%', rotate: '-24deg' },
+  { left: '49.8%', top: '48.1%', rotate: '-34deg' },
 ]
 
 const MapView = () => {

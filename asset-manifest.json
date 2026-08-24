@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc29f3eb.css",
-    "main.js": "/static/js/main.1f549345.js",
+    "main.css": "/static/css/main.14e1e3c9.css",
+    "main.js": "/static/js/main.f5321109.js",
     "static/js/453.e8319c68.chunk.js": "/static/js/453.e8319c68.chunk.js",
     "static/media/background.png": "/static/media/background.486d4b6fe87ce2dbf6f9.png",
+    "static/media/countdown-logo.svg": "/static/media/countdown-logo.0dca158397fe4b137061.svg",
     "static/media/576p.mp4": "/static/media/576p.20bf2f9cd161d9cb6f52.mp4",
     "static/media/576p.webm": "/static/media/576p.2c74e2619631dcbd9823.webm",
     "static/media/screen.png": "/static/media/screen.a8b2d17104529859e0ab.png",
@@ -15,12 +16,12 @@
     "static/media/tele.svg": "/static/media/tele.583447640f2494dbb7ff595885b8aec6.svg",
     "index.html": "/index.html",
     "static/media/emailicon.svg": "/static/media/emailicon.f14ff689fe2d711a6407b279d0437bf6.svg",
-    "main.dc29f3eb.css.map": "/static/css/main.dc29f3eb.css.map",
-    "main.1f549345.js.map": "/static/js/main.1f549345.js.map",
+    "main.14e1e3c9.css.map": "/static/css/main.14e1e3c9.css.map",
+    "main.f5321109.js.map": "/static/js/main.f5321109.js.map",
     "453.e8319c68.chunk.js.map": "/static/js/453.e8319c68.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc29f3eb.css",
-    "static/js/main.1f549345.js"
+    "static/css/main.14e1e3c9.css",
+    "static/js/main.f5321109.js"
   ]
 }

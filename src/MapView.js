@@ -47,8 +47,8 @@ const MapView = () => {
 
       <iframe
         className="map-player"
-        title="Benga & Coki — Night (Neekeetone Jungle Rework)"
-        src="https://bandcamp.com/EmbeddedPlayer/track=2172554381/size=small/bgcol=000000/linkcol=62d8ef/transparent=true/"
+        title="B.D.B, BICEP, Benjamin Damage — CHROMA 005 A.L.O.E"
+        src="https://bandcamp.com/EmbeddedPlayer/track=1533066334/size=small/bgcol=000000/linkcol=62d8ef/transparent=true/"
         allow="autoplay"
       />
     </main>

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './Countdown.css'
+import MapView from './MapView'
 
-// Midnight at the BEGINNING of 12 September in London.
+// One minute after midnight on 12 September in London.
 // London is BST (+01:00) on this date.
-const EVENT_TIME = new Date('2026-09-12T00:00:00+01:00')
+const EVENT_TIME = new Date('2026-09-12T00:01:00+01:00')
 
 const getLondonDate = () => {
   const parts = new Intl.DateTimeFormat('en-GB', {
@@ -95,11 +96,7 @@ const Countdown = () => {
   const eventHasStarted = now >= EVENT_TIME
 
   if (eventHasStarted) {
-    return (
-      <main className="countdown">
-        MAP
-      </main>
-    )
+    return <MapView />
   }
 
   const daysLeft = getDaysLeft()

@@ -1,0 +1,115 @@
+.event-map {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  background: #08050e;
+
+  display: grid;
+  place-items: center;
+}
+
+.event-map-frame {
+  width: min(100vw, calc(100dvh * 1.876));
+  aspect-ratio: 2048 / 1092;
+  position: relative;
+}
+
+.event-map-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.event-map-logo {
+  width: clamp(74px, 8.5vw, 150px);
+  aspect-ratio: 1;
+  position: absolute;
+  left: 47.4%;
+  top: 44.2%;
+  translate: -50% -50%;
+  z-index: 3;
+
+  background-image: linear-gradient(
+    135deg,
+    #d9dc35 5%,
+    #ff70bc 38%,
+    #62d8ef 68%,
+    #a86ce8 100%
+  );
+  -webkit-mask: url("./countdown-logo.svg") center / contain no-repeat;
+  mask: url("./countdown-logo.svg") center / contain no-repeat;
+  filter:
+    drop-shadow(0 0 8px rgba(255, 112, 188, 0.8))
+    drop-shadow(0 0 18px rgba(98, 216, 239, 0.7));
+  animation: map-logo-mingle 2.4s ease-in-out infinite;
+}
+
+.paw-step {
+  position: absolute;
+  translate: -50% -50%;
+  z-index: 2;
+  font-size: clamp(15px, 1.8vw, 30px);
+  line-height: 1;
+  filter:
+    grayscale(1)
+    brightness(2.2)
+    sepia(1)
+    hue-rotate(132deg)
+    saturate(4)
+    drop-shadow(0 0 5px rgba(98, 216, 239, 0.9));
+  opacity: 0.28;
+  animation: paw-mingle 2.1s steps(1, end) infinite;
+  animation-delay: calc(var(--paw-index) * -0.23s);
+}
+
+.map-player {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(14px, 2.5vh, 28px);
+  translate: -50% 0;
+  z-index: 5;
+  width: min(420px, calc(100% - 40px));
+  height: 42px;
+  border: 0;
+  border-radius: 4px;
+  opacity: 0.78;
+}
+
+@keyframes map-logo-mingle {
+  0%,
+  100% {
+    opacity: 0.62;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes paw-mingle {
+  0%,
+  62%,
+  100% {
+    opacity: 0.25;
+  }
+
+  63%,
+  82% {
+    opacity: 1;
+  }
+}
+
+@media (max-aspect-ratio: 3 / 4) {
+  .event-map-frame {
+    width: 100vw;
+  }
+
+  .event-map-logo {
+    width: clamp(58px, 17vw, 86px);
+  }
+
+  .paw-step {
+    font-size: clamp(11px, 3.5vw, 18px);
+  }
+}

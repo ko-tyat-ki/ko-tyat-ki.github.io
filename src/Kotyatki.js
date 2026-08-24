@@ -8,6 +8,7 @@ import Team from './Team'
 import Footer from './Footer'
 import Yokai from './Yokai'
 import Countdown from './Countdown'
+import MapView from './MapView'
 
 import './Kotyatki.css'
 
@@ -20,6 +21,10 @@ function Kotyatki() {
 
   if (hash === "#sbwlfrs-cntdwn") {
     return <Countdown/>
+  }
+
+  if (hash === "#sbwlfrs-map") {
+    return <MapView/>
   }
 
   return (

@@ -24,7 +24,7 @@ const MapView = () => {
 
       <img
         className="event-map-logo"
-        src={`${process.env.PUBLIC_URL}/countdown-logo.svg`}
+        src={`${process.env.PUBLIC_URL}/countdown-logo.png`}
         alt="Event location"
       />
 
@@ -39,9 +39,7 @@ const MapView = () => {
               '--paw-rotate': paw.rotate,
               '--paw-index': index,
             }}
-          >
-            🐾
-          </span>
+          />
         ))}
       </div>
 

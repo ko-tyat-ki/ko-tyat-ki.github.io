@@ -65,15 +65,16 @@
   position: absolute;
   transform: translate(-50%, -50%) rotate(var(--paw-rotate));
   z-index: 2;
-  font-size: clamp(15px, 1.8vw, 30px);
-  line-height: 1;
-  filter:
-    grayscale(1)
-    brightness(2.2)
-    sepia(1)
-    hue-rotate(132deg)
-    saturate(4)
-    drop-shadow(0 0 5px rgba(98, 216, 239, 0.9));
+  width: clamp(17px, 2vw, 30px);
+  aspect-ratio: 1;
+  color: #62d8ef;
+  background:
+    radial-gradient(circle at 20% 26%, currentColor 0 11%, transparent 12%),
+    radial-gradient(circle at 41% 15%, currentColor 0 11%, transparent 12%),
+    radial-gradient(circle at 63% 17%, currentColor 0 11%, transparent 12%),
+    radial-gradient(circle at 82% 30%, currentColor 0 11%, transparent 12%),
+    radial-gradient(ellipse at 50% 67%, currentColor 0 27%, transparent 28%);
+  filter: drop-shadow(0 0 5px rgba(98, 216, 239, 0.95));
   opacity: 0.28;
   animation: paw-forward 3.2s steps(1, end) infinite;
   animation-delay: calc(var(--paw-index) * 0.24s);
@@ -138,7 +139,7 @@
   }
 
   .paw-step {
-    font-size: clamp(16px, 4.5vw, 22px);
+    width: clamp(19px, 5vw, 25px);
   }
 
   .map-player {

@@ -24,7 +24,7 @@ const MapView = () => {
 
       <img
         className="event-map-logo"
-        src={`${process.env.PUBLIC_URL}/countdown-logo.png`}
+        src={`${process.env.PUBLIC_URL}/countdown-logo-clean.svg`}
         alt="Event location"
       />
 

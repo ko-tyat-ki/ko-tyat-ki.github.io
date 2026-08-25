@@ -39,26 +39,26 @@
 
 .event-map-logo {
   width: clamp(74px, 8.5vw, 150px);
+  height: clamp(74px, 8.5vw, 150px);
   aspect-ratio: 1;
   position: absolute;
-  left: 47.4%;
-  top: 44.2%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
 
-  background-image: linear-gradient(
-    135deg,
-    #d9dc35 5%,
-    #ff70bc 38%,
-    #62d8ef 68%,
-    #a86ce8 100%
-  );
-  -webkit-mask: url("./countdown-logo.svg") center / contain no-repeat;
-  mask: url("./countdown-logo.svg") center / contain no-repeat;
+  object-fit: contain;
   filter:
     drop-shadow(0 0 8px rgba(255, 112, 188, 0.8))
     drop-shadow(0 0 18px rgba(98, 216, 239, 0.7));
   animation: map-logo-mingle 2.4s ease-in-out infinite;
+}
+
+.paw-route {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  pointer-events: none;
 }
 
 .paw-step {
@@ -126,7 +126,15 @@
   }
 
   .event-map-logo {
+    left: 50%;
+    top: 50%;
     width: clamp(68px, 20vw, 94px);
+    height: clamp(68px, 20vw, 94px);
+    z-index: 10;
+  }
+
+  .paw-route {
+    position: absolute;
   }
 
   .paw-step {

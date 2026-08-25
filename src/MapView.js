@@ -2,13 +2,13 @@ import React from 'react'
 import './MapView.css'
 
 const paws = [
-  { left: '49.4%', top: '81.5%', rotate: '8deg' },
-  { left: '50.2%', top: '75.8%', rotate: '12deg' },
-  { left: '51.6%', top: '69.6%', rotate: '8deg' },
-  { left: '52.4%', top: '63.2%', rotate: '-4deg' },
-  { left: '52.1%', top: '57.1%', rotate: '-14deg' },
-  { left: '51.1%', top: '52.2%', rotate: '-24deg' },
-  { left: '49.8%', top: '48.1%', rotate: '-34deg' },
+  { left: '50%', top: '86%', rotate: '8deg' },
+  { left: '50.5%', top: '80%', rotate: '12deg' },
+  { left: '51.5%', top: '74%', rotate: '8deg' },
+  { left: '52%', top: '68%', rotate: '-4deg' },
+  { left: '51.8%', top: '62%', rotate: '-14deg' },
+  { left: '51%', top: '57%', rotate: '-24deg' },
+  { left: '50%', top: '53%', rotate: '-34deg' },
 ]
 
 const MapView = () => {
@@ -20,29 +20,29 @@ const MapView = () => {
           src={require('./event-map-mingling.png')}
           alt="Map showing the event location in Hackney Marshes"
         />
+      </div>
 
-        <div
-          className="event-map-logo"
-          role="img"
-          aria-label="Event location"
-        />
+      <img
+        className="event-map-logo"
+        src={`${process.env.PUBLIC_URL}/countdown-logo.svg`}
+        alt="Event location"
+      />
 
-        <div className="paw-route" aria-hidden="true">
-          {paws.map((paw, index) => (
-            <span
-              key={index}
-              className="paw-step"
-              style={{
-                left: paw.left,
-                top: paw.top,
-                '--paw-rotate': paw.rotate,
-                '--paw-index': index,
-              }}
-            >
-              🐾
-            </span>
-          ))}
-        </div>
+      <div className="paw-route" aria-hidden="true">
+        {paws.map((paw, index) => (
+          <span
+            key={index}
+            className="paw-step"
+            style={{
+              left: paw.left,
+              top: paw.top,
+              '--paw-rotate': paw.rotate,
+              '--paw-index': index,
+            }}
+          >
+            🐾
+          </span>
+        ))}
       </div>
 
       <iframe

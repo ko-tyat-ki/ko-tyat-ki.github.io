@@ -15,6 +15,7 @@
   position: relative;
   transform: translate(3%, 6.7%) scale(1.15);
   transform-origin: center;
+  z-index: 0;
 }
 
 .event-map-frame::after {
@@ -45,7 +46,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
+  z-index: 100;
 
   object-fit: contain;
   filter:
@@ -57,7 +58,7 @@
 .paw-route {
   position: absolute;
   inset: 0;
-  z-index: 9;
+  z-index: 90;
   pointer-events: none;
 }
 
@@ -119,23 +120,28 @@
 
 @media (max-aspect-ratio: 1 / 1) {
   .event-map-frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
     width: 187.6dvh;
     height: 100dvh;
     max-width: none;
     flex: none;
-    transform: translate(3%, 6.7%) scale(1.15);
+    transform: translate(-47%, -43.3%) scale(1.15);
   }
 
   .event-map-logo {
+    position: fixed;
     left: 50%;
     top: 50%;
     width: clamp(68px, 20vw, 94px);
     height: clamp(68px, 20vw, 94px);
-    z-index: 10;
+    z-index: 100;
   }
 
   .paw-route {
-    position: absolute;
+    position: fixed;
+    z-index: 90;
   }
 
   .paw-step {

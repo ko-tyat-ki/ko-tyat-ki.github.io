@@ -1,0 +1,134 @@
+.countdown {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  background: black;
+  color: white;
+
+  box-sizing: border-box;
+  padding: clamp(32px, 6vw, 80px) 24px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-content {
+  position: absolute;
+  inset: 0;
+}
+
+.countdown-logo {
+  position: absolute;
+  left: 50%;
+  bottom: calc(50% + clamp(38px, 4vw, 58px));
+  transform: translateX(-50%);
+
+  width: clamp(120px, 16vw, 220px);
+  aspect-ratio: 1;
+
+  /* Brighter versions of the site's olive, pink, blue and purple tones. */
+  background-image: linear-gradient(
+    135deg,
+    #d9dc35 5%,
+    #ff70bc 38%,
+    #62d8ef 68%,
+    #a86ce8 100%
+  );
+
+  -webkit-mask: url("./countdown-logo.svg") center / contain no-repeat;
+  mask: url("./countdown-logo.svg") center / contain no-repeat;
+  filter:
+    drop-shadow(0 0 8px rgba(255, 112, 188, 0.4))
+    drop-shadow(0 0 16px rgba(98, 216, 239, 0.2));
+
+  animation: logo-mingle 2.4s ease-in-out infinite;
+}
+
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  white-space: nowrap;
+
+  justify-content: center;
+  max-width: calc(100% - 48px);
+  text-align: center;
+
+  font-size: clamp(28px, 4.5vw, 72px);
+  line-height: 1;
+  color: white;
+}
+
+.loading-letter {
+  display: inline-block;
+
+  background-image: linear-gradient(
+    135deg,
+    #d9dc35 5%,
+    #ff70bc 38%,
+    #62d8ef 68%,
+    #a86ce8 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter:
+    drop-shadow(0 0 3px rgba(255, 112, 188, 0.65))
+    drop-shadow(0 0 7px rgba(98, 216, 239, 0.35));
+
+  opacity: 0.2;
+}
+
+.loading-letter.is-active {
+  opacity: 1;
+}
+
+.countdown-player {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(20px, 4vh, 42px);
+  transform: translateX(-50%);
+
+  width: min(420px, calc(100% - 40px));
+  height: 42px;
+  border: 0;
+  border-radius: 4px;
+  opacity: 0.72;
+}
+
+.countdown-player:hover,
+.countdown-player:focus-within {
+  opacity: 1;
+}
+
+@keyframes logo-mingle {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 520px) {
+  .countdown {
+    padding-inline: 16px;
+  }
+
+  .countdown-logo {
+    bottom: calc(50% + 34px);
+    width: clamp(110px, 32vw, 160px);
+  }
+
+  .loading-text {
+    max-width: calc(100% - 32px);
+    font-size: clamp(26px, 8vw, 40px);
+  }
+}

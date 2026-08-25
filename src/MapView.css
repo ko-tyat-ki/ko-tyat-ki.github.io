@@ -1,0 +1,155 @@
+.event-map {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  background: #08050e;
+
+  display: grid;
+  place-items: center;
+}
+
+.event-map-frame {
+  width: min(100vw, 187.6dvh);
+  aspect-ratio: 2048 / 1092;
+  position: relative;
+  transform: translate(3%, 6.7%) scale(1.15);
+  transform-origin: center;
+  z-index: 0;
+}
+
+.event-map-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 40% 58% at 48.5% 58%,
+    transparent 0%,
+    rgba(8, 5, 14, 0.08) 42%,
+    rgba(8, 5, 14, 0.48) 100%
+  );
+}
+
+.event-map-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.event-map-logo {
+  width: clamp(74px, 8.5vw, 150px);
+  height: clamp(74px, 8.5vw, 150px);
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 8px rgba(255, 112, 188, 0.8))
+    drop-shadow(0 0 18px rgba(98, 216, 239, 0.7));
+  animation: map-logo-mingle 2.4s ease-in-out infinite;
+}
+
+.paw-route {
+  position: absolute;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+}
+
+.paw-step {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(var(--paw-rotate));
+  z-index: 2;
+  width: clamp(17px, 2vw, 30px);
+  aspect-ratio: 1;
+  color: #62d8ef;
+  background:
+    radial-gradient(circle at 20% 26%, currentColor 0 11%, transparent 12%),
+    radial-gradient(circle at 41% 15%, currentColor 0 11%, transparent 12%),
+    radial-gradient(circle at 63% 17%, currentColor 0 11%, transparent 12%),
+    radial-gradient(circle at 82% 30%, currentColor 0 11%, transparent 12%),
+    radial-gradient(ellipse at 50% 67%, currentColor 0 27%, transparent 28%);
+  filter: drop-shadow(0 0 5px rgba(98, 216, 239, 0.95));
+  opacity: 0.28;
+  animation: paw-forward 3.2s steps(1, end) infinite;
+  animation-delay: calc(var(--paw-index) * 0.24s);
+}
+
+.map-player {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(14px, 2.5vh, 28px);
+  transform: translateX(-50%);
+  z-index: 5;
+  width: min(420px, calc(100% - 40px));
+  height: 42px;
+  border: 0;
+  border-radius: 4px;
+  opacity: 0.78;
+}
+
+@keyframes map-logo-mingle {
+  0%,
+  100% {
+    opacity: 0.62;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes paw-forward {
+  0%,
+  14%,
+  100% {
+    opacity: 0.2;
+  }
+
+  15%,
+  34% {
+    opacity: 1;
+  }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .event-map-frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 187.6dvh;
+    height: 100dvh;
+    max-width: none;
+    flex: none;
+    transform: translate(-47%, -43.3%) scale(1.15);
+  }
+
+  .event-map-logo {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: clamp(68px, 20vw, 94px);
+    height: clamp(68px, 20vw, 94px);
+    z-index: 100;
+  }
+
+  .paw-route {
+    position: fixed;
+    z-index: 90;
+  }
+
+  .paw-step {
+    width: clamp(19px, 5vw, 25px);
+  }
+
+  .map-player {
+    bottom: max(14px, env(safe-area-inset-bottom));
+    width: calc(100% - 28px);
+  }
+}
